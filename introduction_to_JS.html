@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airbnb</title>
+   
+</head>
+<body style="margin: 0; padding: 0;">
+    <header style="background-color: #FF0000; height: 70px; width: 100%; margin-bottom: 1px solid;">
+    </header>
+
+    <footer style="background-color: #00FF00 ; height: 60px; width: 100%; position: fixed; bottom: 0;">
+        <p style=" text-align: center; color: black;">Best School</p>
+    </footer>
+    <div style="margin-top: 10px; display: inline-block; padding: 0%;">
+        <button style="width: 50px; height: 45px; background-color: aqua; border-radius: 10px;">Up</button>
+        <button style="background-color:aqua; width: 50px; height: 45px; border-radius: 10px;">Down</button>
+    </div>
+    <script>
+       /* let Todolist1 = 'Get groceries';
+        let Todolist2 = 'Wash car';
+        let Todolist3 = 'Go to shop';
+        let Todolist4 = 'Write code';
+        */
+
+        let Todolist = ['Get groceries', 'Wash car', 'Go to shop', 'Write code'];
+        Todolist.push('Make dinner')
+        //Todolist.pop('Make dinner');
+
+        Todolist.forEach(function(Todolist){
+            let element = document.createElement('div');
+            element.innerText = Todolist;
+            document.body.appendChild(element);
+        });
+        console.log(Todolist);
+        
+        function toUpper(str){
+            str = str.map(str=> str.toUpperCase());
+            console.log(str);
+        }
+	    toUpper(Todolist);
+
+        function arrayDouble(str){
+            let newArray = [];
+            for (i = 0; i < str.lenth; i++);
+            newArray.push(str[i] * 2);
+            console.log(newArray);
+        }
+
+        arrayDouble(Todolist);
+
+        /*function addTodolist(Todolist){
+            let element = document.createElement('div');
+            element.innerText = Todolist;
+            document.body.appendChild(element);
+        }
+
+        addTodolist(Todolist1);
+        addTodolist(Todolist2);
+        addTodolist(Todolist3);
+        addTodolist(Todolist4);
+
+        function greetings(firstName){
+            console.log('Hello', firstName);
+        }
+
+        greetings('otto');
+
+        function toUpper(str){
+            console.log(str.toUpperCase());
+        }
+
+        toUpper('otto');
+
+        function lengthConv(numbers){
+            let inch = 1000;
+            let cm = inch * 2.54;
+            return cm;
+        }
+
+        console.log(lengthConv());
+        */
+
+    </script>
+</body>
+</html>
